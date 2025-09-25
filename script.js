@@ -30,7 +30,9 @@ form.addEventListener("submit", function(event) {
   teamCounter.textContent = parseInt(teamCounter.textContent) + 1;
 
   const message = document.getElementById("greeting");
+  message.style.display = "block";
   message.textContent = `Welcome ${name} from ${teamName}!`;
+  console.log(`Welcome ${name} from ${teamName}!`);
 
   form.reset();
 })
